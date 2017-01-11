@@ -1,15 +1,17 @@
 @keyframes arrow
     from
         transform: none
+    25%
+        transform: scale(1.2,1.2)
     to
-        transform: translateY(-25%)
+        transform: scale(1.1) translateY(-25%)
 
 
 @keyframes titre-shine
     from, to
         text-shadow: none
     25%
-        text-shadow: 0 0 2px white
+        text-shadow: 0 0 5px $couleur2
     50%
         text-shadow: none
 
@@ -18,5 +20,5 @@
         transform: translateY(-100%)
         opacity: 0
     to
-        transform: translateY(100%)
+        transform: translateY(40vh)
         opacity: 1

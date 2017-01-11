@@ -2,6 +2,7 @@
 @import 'mixin'
 @import 'animations'
 @import 'menu'
+@import 'header'
 
 *
     margin: 0
@@ -16,50 +17,6 @@ body
 
 
 
-header
-    position: relative
-    background-color: $black
-    width: 100%
-    height: 100vh
-    color: Azure
-    .titre
-        display: inline-block
-        width: 90%
-        margin-left: auto
-        margin-right: auto
-        animation-name: titre-slide
-        animation-duration: 2s
-        animation-fill-mode: forwards
-        .nom
-            font-family: $font2
-            font-size: 8em
-            animation-name: titre-shine
-            animation-duration: 3s
-            animation-iteration-count: infinite
-        .sous-titre
-            font-family: $font1
-            font-size: 2em
-            text-align: right
-
-#fleche1
-    width: 60px
-    position: absolute
-    opacity: 0.7
-    bottom: 2%
-    right: 30%
-    &:hover
-        animation-name: arrow
-        animation-duration: 0.5s
-
-#fleche2
-    width: 60px
-    position: absolute
-    opacity: 0.7
-    bottom: 2%
-    left: 30%
-    &:hover
-        animation-name: arrow
-        animation-duration: 0.5s
 
 
 

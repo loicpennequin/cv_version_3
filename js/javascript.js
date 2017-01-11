@@ -6,26 +6,30 @@ $(document).ready(function(){
 					$(".section" + i).removeClass("transform" + i);
 				}
 		}
-		$("#content1").toggleClass("hidden", 1000);
-		for (var i = 1; i<=4; i++){
-				if (i != 1) {
-					$(".content"  + i).addClass("hidden");
+		setTimeout(function(){
+			$("#content1").toggleClass("hidden", 1000);
+				for (var i = 1; i<=4; i++){
+					if (i != 1) {
+						$("#content"  + i).addClass("hidden");
+					}
 				}
-		}
+		}, 1000);
 	});
 	$( ".section2" ).click(function() {
 		$( ".section2" ).toggleClass("transform2", 1000, "easeInOutQuad" );
 		for (var i = 1; i<=4; i++){
 				if (i != 2) {
-					$("#section" + i).removeClass("transform" + i);
+					$(".section" + i).removeClass("transform" + i);
 				}
 		}
-		$("#content2").toggleClass("hidden", 1000);
-		for (var i = 1; i<=4; i++){
-				if (i != 2) {
-					$("#content" + i).addClass("hidden");
+		setTimeout(function(){
+			$("#content2").toggleClass("hidden", 1000);
+				for (var i = 1; i<=4; i++){
+					if (i != 2) {
+						$("#content"  + i).addClass("hidden");
+					}
 				}
-		}
+		}, 1000);
 	});
 	$( ".section3" ).click(function() {
 		$( ".section3" ).toggleClass("transform3", 1000, "easeInOutQuad" );
@@ -35,26 +39,35 @@ $(document).ready(function(){
 			}
 		}
 		$("#content3").toggleClass("hidden", 1000);
-		for (var i = 1; i<=4; i++){
-				if (i != 3) {
-					$("#content" + i).addClass("hidden");
+		setTimeout(function(){
+			$("#content3").toggleClass("hidden", 1000);
+				for (var i = 1; i<=4; i++){
+					if (i != 3) {
+						$("#content"  + i).addClass("hidden");
+					}
 				}
-		}
+		}, 1000);
 	});
 	$( ".section4" ).click(function() {
 		$( ".section4" ).toggleClass("transform4", 1000, "easeInOutQuad" );
 		for (var i = 1; i<=4; i++){
 				if (i != 4) {
-					$(".section" + i).removeClass("transformy" + i);
+					$(".section" + i).removeClass("transform" + i);
 			}
 		}
-		$("#content4").toggleClass("hidden", 1000);
-		for (var i = 1; i<=4; i++){
-				if (i != 4) {
-					$("#content" + i).addClass("hidden");
+		setTimeout(function(){
+			$("#content4").toggleClass("hidden", 1000);
+				for (var i = 1; i<=4; i++){
+					if (i != 4) {
+						$("#content"  + i).addClass("hidden");
+					}
 				}
-		}
+		}, 1000);
 	});
+
+
+
+
 
 
 	$( "#fleche1" ).click(function() {
