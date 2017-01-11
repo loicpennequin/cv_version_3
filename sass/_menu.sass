@@ -1,0 +1,48 @@
+
+.section1
+    background-color: $couleur1b
+    transform: rotate(30deg)
+    transition: all 1s
+    top: 5%
+
+.section2
+    background-color: $couleur2b
+    transform: rotate(30deg)
+    transition: all 1s
+    top: 15%
+
+.section3
+    background-color: $couleur3b
+    transform: rotate(30deg)
+    transition: all 1s
+    top: 25%
+
+.section4
+    background-color: $couleur4b
+    transform: rotate(30deg)
+    transition: all 1s
+    top: 35%
+
+.btn-section
+    border-bottom: solid white 1px
+    text-shadow: 0 0 1px rgba(0,0,0,0.8)
+    font-weight: bold
+    transition: all 0.3s
+    &:hover
+        text-shadow: 0 0 5px white
+
+.transform1
+    @include transform
+    background-color: $couleur1
+
+.transform2
+    @include transform
+    background-color: $couleur2
+
+.transform3
+    @include transform
+    background-color: $couleur3
+
+.transform4
+    @include transform
+    background-color: $couleur4

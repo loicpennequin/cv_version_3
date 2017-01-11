@@ -1,0 +1,99 @@
+@import 'var'
+@import 'mixin'
+@import 'animations'
+@import 'menu'
+
+*
+    margin: 0
+    padding : 0
+
+body
+    background-color: #E0EEEE
+    text-align: center
+    overflow-x: hidden
+
+
+
+
+
+header
+    position: relative
+    background-color: $black
+    width: 100%
+    height: 100vh
+    color: Azure
+    .titre
+        display: inline-block
+        width: 90%
+        margin-left: auto
+        margin-right: auto
+        animation-name: titre-slide
+        animation-duration: 2s
+        animation-fill-mode: forwards
+        .nom
+            font-family: $font2
+            font-size: 8em
+            animation-name: titre-shine
+            animation-duration: 3s
+            animation-iteration-count: infinite
+        .sous-titre
+            font-family: $font1
+            font-size: 2em
+            text-align: right
+
+#fleche1
+    width: 60px
+    position: absolute
+    opacity: 0.7
+    bottom: 2%
+    right: 30%
+    &:hover
+        animation-name: arrow
+        animation-duration: 0.5s
+
+#fleche2
+    width: 60px
+    position: absolute
+    opacity: 0.7
+    bottom: 2%
+    left: 30%
+    &:hover
+        animation-name: arrow
+        animation-duration: 0.5s
+
+
+
+
+
+main
+    position: relative
+    height: 800px
+    background: url("../bg.jpg")
+    background-size: cover
+    padding-top : 20px
+    section
+        @include custom-border
+        display: inline-block
+        padding: 10px
+        width: 15%
+        height: 400px
+        position: absolute
+        transition: all 1s
+        border-radius: 10px
+        left: -9%
+        font-family: $font1
+        font-size: 1.4em
+        color: $white
+
+
+#photo
+    @include custom-border
+    border-radius: 10px
+    width: 18%
+    position: absolute
+    top: 15%
+    right: 4%
+    filter: contrast(120%) grayscale(20%)
+
+.hidden
+    display: none
