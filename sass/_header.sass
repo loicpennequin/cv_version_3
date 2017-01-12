@@ -1,12 +1,13 @@
 header
+    z-index: 2
     position: relative
-    background-color: $black
-    background: url("../header.jpg")
-    background-size: cover
+    background-color: transparent
+    //background: url("../header.jpg")
+    //background-size: cover
     width: 100%
     height: 100vh
     filter: contrast(120%)
-    color: Azure
+    color: $white
     .titre
         display: inline-block
         width: 100%
@@ -33,24 +34,30 @@ header
             padding-right: 20px
             background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.5))
 
+.nom:hover ~ .sous-titre
+    filter:blur(5px)
+
 #fleche1
     width: 60px
     position: absolute
     opacity: 0.7
-    bottom: 2%
-    right: 30%
+    bottom: 7%
+    right: 15%
     z-index: 50
     &:hover
         animation-name: arrow
-        animation-duration: 0.5s
+        animation-duration: 1s
 
 #fleche2
     width: 60px
     position: absolute
     opacity: 0.7
-    bottom: 2%
-    left: 30%
+    bottom: 7%
+    left: 15%
     z-index: 50
     &:hover
         animation-name: arrow
-        animation-duration: 0.5s
+        animation-duration: 1s
+
+.color1
+    filter: hue-rotate(45deg)

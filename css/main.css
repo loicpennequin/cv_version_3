@@ -1,15 +1,15 @@
 @keyframes arrow {
-  from {
+  from, to {
+    bottom: 7%;
     transform: none; }
-  25% {
-    transform: scale(1.2, 1.2); }
-  to {
-    transform: scale(1.1) translateY(-25%); } }
+  50% {
+    bottom: 2%;
+    transform: scale(1.1, 1.1); } }
 @keyframes titre-shine {
   from, to {
     text-shadow: none; }
   25% {
-    text-shadow: 0 0 5px rgba(204, 0, 153, 0.3); }
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.8); }
   50% {
     text-shadow: none; } }
 @keyframes titre-slide {
@@ -23,30 +23,31 @@
   background-color: rgba(128, 0, 0, 0.3);
   transform: rotate(30deg);
   transition: all 1s;
-  top: 5%; }
+  top: 7%; }
 
 .section2 {
   background-color: rgba(128, 0, 96, 0.3);
   transform: rotate(30deg);
   transition: all 1s;
-  top: 15%; }
+  top: 17%; }
 
 .section3 {
   background-color: rgba(64, 0, 128, 0.3);
   transform: rotate(30deg);
   transition: all 1s;
-  top: 25%; }
+  top: 27%; }
 
 .section4 {
   background-color: rgba(0, 32, 128, 0.3);
   transform: rotate(30deg);
   transition: all 1s;
-  top: 35%; }
+  top: 37%; }
 
 .btn-section {
   border-bottom: solid white 1px;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
   font-weight: bold;
+  font-size: 1em;
   transition: all 0.3s; }
   .btn-section:hover {
     text-shadow: 0 0 5px white; }
@@ -56,7 +57,7 @@
   width: 55%;
   left: 18%;
   top: 3%;
-  height: 90%;
+  height: 85%;
   background-color: rgba(204, 0, 0, 0.3); }
 
 .transform2 {
@@ -64,7 +65,7 @@
   width: 55%;
   left: 18%;
   top: 3%;
-  height: 90%;
+  height: 85%;
   background-color: rgba(204, 0, 153, 0.3); }
 
 .transform3 {
@@ -72,7 +73,7 @@
   width: 55%;
   left: 18%;
   top: 3%;
-  height: 90%;
+  height: 85%;
   background-color: rgba(102, 0, 204, 0.3); }
 
 .transform4 {
@@ -80,18 +81,17 @@
   width: 55%;
   left: 18%;
   top: 3%;
-  height: 90%;
+  height: 85%;
   background-color: rgba(0, 51, 204, 0.3); }
 
 header {
+  z-index: 2;
   position: relative;
-  background-color: #222222;
-  background: url("../header.jpg");
-  background-size: cover;
+  background-color: transparent;
   width: 100%;
   height: 100vh;
   filter: contrast(120%);
-  color: Azure; }
+  color: rgba(255, 255, 255, 0.8); }
   header .titre {
     display: inline-block;
     width: 100%;
@@ -122,36 +122,51 @@ header {
   width: 60px;
   position: absolute;
   opacity: 0.7;
-  bottom: 2%;
-  right: 30%;
+  bottom: 7%;
+  right: 15%;
   z-index: 50; }
   #fleche1:hover {
     animation-name: arrow;
-    animation-duration: 0.5s; }
+    animation-duration: 1s; }
 
 #fleche2 {
   width: 60px;
   position: absolute;
   opacity: 0.7;
-  bottom: 2%;
-  left: 30%;
+  bottom: 7%;
+  left: 15%;
   z-index: 50; }
   #fleche2:hover {
     animation-name: arrow;
-    animation-duration: 0.5s; }
+    animation-duration: 1s; }
+
+.color1 {
+  filter: hue-rotate(45deg); }
 
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  background-color: #E0EEEE;
-  text-align: center;
-  overflow-x: hidden; }
+  background-color: #222222;
+  text-align: center; }
+
+.static-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  transition: all 0.3s; }
+
+.blurred {
+  filter: blur(10px); }
 
 main {
+  z-index: 2;
   position: relative;
-  height: 800px;
+  overflow: hidden;
+  height: 600px;
   background: url("../bg.jpg");
   background-size: cover;
   padding-top: 20px; }
@@ -160,12 +175,13 @@ main {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
     display: inline-block;
     padding: 10px;
-    width: 15%;
+    width: 20%;
     height: 400px;
     position: absolute;
+    overflow: hidden;
     transition: all 1s;
     border-radius: 10px;
-    left: -9%;
+    left: -11%;
     font-family: "Lustria", serif;
     font-size: 1.4em;
     color: rgba(255, 255, 255, 0.8); }
@@ -174,13 +190,31 @@ main {
   border: solid rgba(50, 50, 50, 0.5) 4px;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-  width: 18%;
+  height: 65%;
   position: absolute;
-  top: 15%;
+  top: 20px;
   right: 4%;
   filter: contrast(120%) grayscale(20%); }
 
+.content {
+  text-align: left;
+  padding: 5%;
+  font-size: 0.8em; }
+  .content ul {
+    list-style-type: none; }
+  .content p {
+    margin-top: 10px; }
+  .content a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 1px #222222;
+    transition: text-shadow 0.5s; }
+    .content a:hover {
+      text-decoration: none;
+      text-shadow: 0 0 2px white; }
+
 .hidden {
-  display: none; }
+  opacity: 0;
+  transition: opacity 1s; }
 
 /*# sourceMappingURL=main.css.map */

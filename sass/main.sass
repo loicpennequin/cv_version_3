@@ -9,22 +9,26 @@
     padding : 0
 
 body
-    background-color: #E0EEEE
+    background-color: $black
     text-align: center
-    overflow-x: hidden
+//    overflow-x: hidden
 
+.static-bg
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1
+    width: 100%
+    transition: all 0.3s
 
-
-
-
-
-
-
-
+.blurred
+    filter: blur(10px)
 
 main
+    z-index: 2
     position: relative
-    height: 800px
+    overflow: hidden
+    height: 600px
     background: url("../bg.jpg")
     background-size: cover
     padding-top : 20px
@@ -32,12 +36,13 @@ main
         @include custom-border
         display: inline-block
         padding: 10px
-        width: 15%
+        width: 20%
         height: 400px
         position: absolute
+        overflow: hidden
         transition: all 1s
         border-radius: 10px
-        left: -9%
+        left: -11%
         font-family: $font1
         font-size: 1.4em
         color: $white
@@ -46,11 +51,29 @@ main
 #photo
     @include custom-border
     border-radius: 10px
-    width: 18%
+    height: 65%
     position: absolute
-    top: 15%
+    top: 20px
     right: 4%
     filter: contrast(120%) grayscale(20%)
 
+.content
+    text-align: left
+    padding: 5%
+    font-size: 0.8em
+    ul
+        list-style-type: none
+    p
+        margin-top: 10px
+    a
+        text-decoration: none
+        color: $white
+        text-shadow: 0 0 1px $black
+        transition: text-shadow 0.5s
+        &:hover
+            text-decoration: none
+            text-shadow: 0 0 2px white
+
 .hidden
-    display: none
+    opacity: 0
+    transition: opacity 1s
