@@ -1,13 +1,12 @@
 header
     z-index: 2
     position: relative
-    background-color: transparent
-    //background: url("../header.jpg")
-    //background-size: cover
+    border-bottom: solid 2px $white
     width: 100%
     height: 100vh
-    filter: contrast(120%)
     color: $white
+    @media (max-width: 768px)
+        height: 80vh
     .titre
         display: inline-block
         width: 100%
@@ -16,15 +15,43 @@ header
         animation-name: titre-slide
         animation-duration: 2s
         animation-fill-mode: forwards
+        @media (max-width: 768px)
+            animation-name: titre-slide-768
+        .effect
+            height: 100%
+            width: 25%
+            position: absolute
+            top: 0
+            opacity: 0.4
+            @media (max-width: 768px)
+                display: none
+        .effect1
+            left: 0
+            &:hover
+                background: linear-gradient(to right, rgba(0,0,0,0), $couleur1, rgba(0,0,0,0))
+        .effect2
+            left: 25%
+            &:hover
+                background: linear-gradient(to right, rgba(0,0,0,0), $couleur2, rgba(0,0,0,0))
+        .effect3
+            left: 50%
+            &:hover
+                background: linear-gradient(to right, rgba(0,0,0,0), $couleur3, rgba(0,0,0,0))
+        .effect4
+            left: 75%
+            &:hover
+                background: linear-gradient(to right, rgba(0,0,0,0), $couleur4, rgba(0,0,0,0))
         .nom
-            background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0))
+            background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6), rgba(0,0,0,0))
             border-top: solid 1px $white
             border-bottom: solid 1px $white
             font-family: $font2
             font-size: 8em
             animation-name: titre-shine
-            animation-duration: 3s
+            animation-duration: 2s
             animation-iteration-count: infinite
+            @media (max-width: 768px)
+                font-size: 4em
         .sous-titre
             font-family: $font1
             font-size: 2em
@@ -32,7 +59,9 @@ header
             text-align: right
             border-bottom: solid $white 1px
             padding-right: 20px
-            background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.5))
+            background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6))
+            @media (max-width: 768px)
+                font-size: 1em
 
 .nom:hover ~ .sous-titre
     filter:blur(5px)
@@ -40,10 +69,11 @@ header
 #fleche1
     width: 60px
     position: absolute
-    opacity: 0.7
     bottom: 7%
     right: 15%
     z-index: 50
+    @media (max-width: 768px)
+        width: 30px
     &:hover
         animation-name: arrow
         animation-duration: 1s
@@ -51,13 +81,11 @@ header
 #fleche2
     width: 60px
     position: absolute
-    opacity: 0.7
     bottom: 7%
     left: 15%
     z-index: 50
+    @media (max-width: 768px)
+        width: 30px
     &:hover
         animation-name: arrow
         animation-duration: 1s
-
-.color1
-    filter: hue-rotate(45deg)
