@@ -22,25 +22,28 @@ header
             width: 25%
             position: absolute
             top: 0
-            opacity: 0.4
+            opacity: 0
+            transition: opacity 1s
             @media (max-width: 768px)
                 display: none
+            &:hover
+                opacity: 0.5
         .effect1
             left: 0
-            &:hover
-                background: linear-gradient(to right, rgba(0,0,0,0), $couleur1, rgba(0,0,0,0))
+            background: linear-gradient(to right, rgba(0,0,0,0), $couleur1, rgba(0,0,0,0))
+
         .effect2
             left: 25%
-            &:hover
-                background: linear-gradient(to right, rgba(0,0,0,0), $couleur2, rgba(0,0,0,0))
+            background: linear-gradient(to right, rgba(0,0,0,0), $couleur2, rgba(0,0,0,0))
+
         .effect3
             left: 50%
-            &:hover
-                background: linear-gradient(to right, rgba(0,0,0,0), $couleur3, rgba(0,0,0,0))
+            background: linear-gradient(to right, rgba(0,0,0,0), $couleur3, rgba(0,0,0,0))
+
         .effect4
             left: 75%
-            &:hover
-                background: linear-gradient(to right, rgba(0,0,0,0), $couleur4, rgba(0,0,0,0))
+            background: linear-gradient(to right, rgba(0,0,0,0), $couleur4, rgba(0,0,0,0))
+        
         .nom
             background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6), rgba(0,0,0,0))
             border-top: solid 1px $white

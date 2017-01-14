@@ -3,7 +3,7 @@
     bottom: 7%;
     transform: none; }
   50% {
-    bottom: 2%;
+    bottom: 6%;
     transform: scale(1.1, 1.1); } }
 @keyframes titre-shine {
   from, to {
@@ -89,15 +89,27 @@
   background-color: rgba(0, 51, 204, 0.3); }
 
 .bg-couleur-1 {
+  background-color: rgba(128, 0, 0, 0.3); }
+
+.bg-couleur-1b {
   background-color: rgba(128, 0, 0, 0.1); }
 
 .bg-couleur-2 {
   background-color: rgba(204, 0, 153, 0.1); }
 
+.bg-couleur-2b {
+  background-color: rgba(204, 0, 153, 0.1); }
+
 .bg-couleur-3 {
+  background-color: rgba(102, 0, 204, 0.3); }
+
+.bg-couleur-3b {
   background-color: rgba(102, 0, 204, 0.1); }
 
 .bg-couleur-4 {
+  background-color: rgba(0, 51, 204, 0.3); }
+
+.bg-couleur-4b {
   background-color: rgba(0, 51, 204, 0.1); }
 
 header {
@@ -126,26 +138,25 @@ header {
       width: 25%;
       position: absolute;
       top: 0;
-      opacity: 0.4; }
+      opacity: 0;
+      transition: opacity 1s; }
       @media (max-width: 768px) {
         header .titre .effect {
           display: none; } }
+      header .titre .effect:hover {
+        opacity: 0.5; }
     header .titre .effect1 {
-      left: 0; }
-      header .titre .effect1:hover {
-        background: linear-gradient(to right, transparent, rgba(128, 0, 0, 0.3), transparent); }
+      left: 0;
+      background: linear-gradient(to right, transparent, rgba(128, 0, 0, 0.3), transparent); }
     header .titre .effect2 {
-      left: 25%; }
-      header .titre .effect2:hover {
-        background: linear-gradient(to right, transparent, rgba(204, 0, 153, 0.3), transparent); }
+      left: 25%;
+      background: linear-gradient(to right, transparent, rgba(204, 0, 153, 0.3), transparent); }
     header .titre .effect3 {
-      left: 50%; }
-      header .titre .effect3:hover {
-        background: linear-gradient(to right, transparent, rgba(102, 0, 204, 0.3), transparent); }
+      left: 50%;
+      background: linear-gradient(to right, transparent, rgba(102, 0, 204, 0.3), transparent); }
     header .titre .effect4 {
-      left: 75%; }
-      header .titre .effect4:hover {
-        background: linear-gradient(to right, transparent, rgba(0, 51, 204, 0.3), transparent); }
+      left: 75%;
+      background: linear-gradient(to right, transparent, rgba(0, 51, 204, 0.3), transparent); }
     header .titre .nom {
       background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.6), transparent);
       border-top: solid 1px rgba(255, 255, 255, 0.8);
@@ -214,20 +225,21 @@ body {
   z-index: 1;
   width: 100%;
   transition: all 0.8s;
-  filter: contrast(120%); }
+  filter: contrast(115%); }
   @media (max-width: 768px) {
     .static-bg {
       display: none; } }
 
 .blurred {
-  filter: contrast(120%) blur(3px); }
+  filter: contrast(115%) blur(3px); }
 
 main {
   z-index: 2;
   position: relative;
   overflow: hidden;
-  height: 600px;
+  height: 100vh;
   padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
   transition: background-color 2s; }
   main section {
     border: solid rgba(50, 50, 50, 0.5) 4px;
@@ -243,6 +255,7 @@ main {
     left: -11%;
     font-family: "Lustria", serif;
     font-size: 1.4em;
+    line-height: 1.6em;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.4); }
 
@@ -256,13 +269,11 @@ main {
     list-style-type: none; }
   .content p {
     margin-top: 10px; }
-  .content a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-    transition: text-shadow 0.5s; }
-    .content a:hover {
-      text-decoration: none;
-      text-shadow: 0 0 2px white; }
+  .content dt {
+    font-size: 1.5em;
+    font-style: italic; }
+  .content dd {
+    font-weight: normal; }
 
 .contact {
   border: solid rgba(50, 50, 50, 0.5) 4px;
@@ -273,17 +284,30 @@ main {
   overflow: hidden;
   border-radius: 10px;
   width: 20%;
-  background-color: rgba(0, 0, 0, 0.4);
   font-family: "Lustria", serif;
+  font-size: 1em;
+  line-height: 2em;
   color: rgba(255, 255, 255, 0.8);
-  padding: 5px; }
+  padding: 15px 5px 5px 5px;
+  transition: background-color 1s; }
   .contact #photo {
     display: block;
-    margin-bottom: 10%;
-    margin: 0 auto 10%;
+    margin: 0 auto;
     width: 80%;
     border-radius: 10px;
     filter: contrast(120%) grayscale(20%); }
+  .contact a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: text-shadow 0.5s; }
+    .contact a:hover {
+      text-decoration: none;
+      text-shadow: 0 0 2px white; }
+  .contact .logo {
+    opacity: 0.6;
+    transition: all 0.3s; }
+    .contact .logo:hover {
+      opacity: 1; }
 
 .hidden {
   opacity: 0;

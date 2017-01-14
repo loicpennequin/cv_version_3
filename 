@@ -1,0 +1,32 @@
+Javascript réparé
+
+et quelques ameliorations design
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Loïc <Loïc>
+#
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   .sass-cache/a6cbb7fb2b9b147159c8207531f5059c096d87ef/_animations.sassc
+#	new file:   .sass-cache/a6cbb7fb2b9b147159c8207531f5059c096d87ef/_header.sassc
+#	new file:   .sass-cache/a6cbb7fb2b9b147159c8207531f5059c096d87ef/_menu.sassc
+#	new file:   .sass-cache/a6cbb7fb2b9b147159c8207531f5059c096d87ef/_mixin.sassc
+#	new file:   .sass-cache/a6cbb7fb2b9b147159c8207531f5059c096d87ef/_var.sassc
+#	new file:   .sass-cache/a6cbb7fb2b9b147159c8207531f5059c096d87ef/main.sassc
+#	modified:   css/main.css
+#	modified:   css/main.css.map
+#	new file:   header.jpg
+#	modified:   index.html
+#	modified:   js/javascript.js
+#	modified:   sass/_animations.sass
+#	new file:   sass/_header.sass
+#	modified:   sass/main.sass
+#
+# Untracked files:
+#	"\357\200\272"
+#

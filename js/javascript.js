@@ -2,22 +2,30 @@ $(document).ready(function(){
 
 // MENU
 
-/*
-for (var i = 1; i<=4; i++) {
+
+for (let i = 1; i<=4; i++) {
 	$(".section" + i).click(function(){
 	for (var j = 1; j<=4; j++) {
 		if (i == j) {
 			$(".section" + j).toggleClass("transform" + i );
 			$("#content" + j).toggleClass("hidden");
+			$("main").toggleClass("bg-couleur-" + j + "b");
+			$(".contact").toggleClass("bg-couleur-" + j);
 		}
 		else {
 			$(".section" + j).removeClass("transform" + j);
 			$("#content"  + j).addClass("hidden");
+			$("main").removeClass("bg-couleur-" + j + "b");
+			$(".contact").removeClass("bg-couleur-" + j);
+
 		}
 	}
 	});
 }
-*/
+
+
+
+/* ANCIENNE VERSION
 
 	$( ".section1" ).click(function() {
 		for (var i = 1; i<=4; i++ ){
@@ -25,11 +33,13 @@ for (var i = 1; i<=4; i++) {
 					$(".section" + i).removeClass("transform" + i);
 					$("#content"  + i).addClass("hidden");
 					$("main").removeClass("bg-couleur-" + i);
+					$(".contact").removeClass("bg-couleur-" + i);
 				}
 				else {
 					$( ".section" + i).toggleClass("transform" + i );
 					$("#content" + i).toggleClass("hidden");
-					$("main").toggleClass("bg-couleur-" + i);
+					$("main").toggleClass("bg-couleur-" + i + "b");
+					$(".contact").toggleClass("bg-couleur-" + i);
 				}
 		}
 
@@ -41,11 +51,13 @@ for (var i = 1; i<=4; i++) {
 					$(".section" + i).removeClass("transform" + i);
 					$("#content"  + i).addClass("hidden");
 					$("main").removeClass("bg-couleur-" + i);
+					$(".contact").removeClass("bg-couleur-" + i);
 				}
 				else {
 					$( ".section" + i).toggleClass("transform" + i, 1000, "easeInOutQuad" );
 					$("#content" + i).toggleClass("hidden");
-					$("main").toggleClass("bg-couleur-" + i);
+					$("main").toggleClass("bg-couleur-" + i + "b");
+					$(".contact").toggleClass("bg-couleur-" + i);
 				}
 		}
 		$("#photo").removeClass("photo-slide");
@@ -57,11 +69,13 @@ for (var i = 1; i<=4; i++) {
 					$(".section" + i).removeClass("transform" + i);
 					$("#content"  + i).addClass("hidden");
 					$("main").removeClass("bg-couleur-" + i);
+					$(".contact").removeClass("bg-couleur-" + i);
 				}
 				else {
 					$( ".section" + i).toggleClass("transform" + i, 1000, "easeInOutQuad" );
 					$("#content" + i).toggleClass("hidden");
-					$("main").toggleClass("bg-couleur-" + i);
+					$("main").toggleClass("bg-couleur-" + i + "b");
+					$(".contact").toggleClass("bg-couleur-" + i);
 				}
 		}
 		$("#photo").removeClass("photo-slide");
@@ -72,19 +86,21 @@ for (var i = 1; i<=4; i++) {
 				if (i != 4) {
 					$(".section" + i).removeClass("transform" + i);
 					$("#content"  + i).addClass("hidden");
-					$("main").removeClass("bg-couleur-" + i);
+					$("main").removeClass("bg-couleur-" + i + "b");
+					$(".contact").removeClass("bg-couleur-" + i);
 				}
 				else {
 					$( ".section" + i).toggleClass("transform" + i, 1000, "easeInOutQuad" );
 					$("#content" + i).toggleClass("hidden");
 					$("main").toggleClass("bg-couleur-" + i);
+					$(".contact").toggleClass("bg-couleur-" + i);
 				}
 		}
 		$("#photo").removeClass("photo-slide");
 	});
 
 
-
+*/
 
 // FLECHES
 

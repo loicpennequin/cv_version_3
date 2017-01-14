@@ -23,12 +23,12 @@ body
     z-index: 1
     width: 100%
     transition: all 0.8s
-    filter: contrast(120%)
+    filter: contrast(115%)
     @media (max-width: 768px)
         display: none
 
 .blurred
-    filter: contrast(120%) blur(3px)
+    filter: contrast(115%) blur(3px)
 
 
 //MAIN
@@ -37,8 +37,9 @@ main
     z-index: 2
     position: relative
     overflow: hidden
-    height: 600px
+    height: 100vh
     padding-top : 20px
+    background-color: rgba(0,0,0,0.4)
     transition: background-color 2s
     section
         @include custom-border
@@ -53,6 +54,7 @@ main
         left: -11%
         font-family: $font1
         font-size: 1.4em
+        line-height: 1.6em
         color: $white
         background-color: rgba(0,0,0,0.4)
 
@@ -66,13 +68,11 @@ main
         list-style-type: none
     p
         margin-top: 10px
-    a
-        text-decoration: none
-        color: $white
-        transition: text-shadow 0.5s
-        &:hover
-            text-decoration: none
-            text-shadow: 0 0 2px white
+    dt
+        font-size: 1.5em
+        font-style: italic
+    dd
+        font-weight: normal
 .contact
     @include custom-border
     position: absolute
@@ -81,17 +81,31 @@ main
     overflow: hidden
     border-radius: 10px
     width: 20%
-    background-color: rgba(0,0,0,0.4)
+    //background-color: rgba(0,0,0,0.4)
     font-family: $font1
+    font-size: 1em
+    line-height: 2em
     color: $white
-    padding: 5px
+    padding: 15px 5px 5px 5px
+    transition: background-color 1s
     #photo
         display: block
-        margin-bottom: 10%
-        margin: 0 auto 10%
+        margin: 0 auto
         width: 80%
         border-radius: 10px
         filter: contrast(120%) grayscale(20%)
+    a
+        text-decoration: none
+        color: $white
+        transition: text-shadow 0.5s
+        &:hover
+            text-decoration: none
+            text-shadow: 0 0 2px white
+    .logo
+        opacity: 0.6
+        transition: all 0.3s
+        &:hover
+            opacity: 1
 
 
 
