@@ -31,12 +31,21 @@
 
 .section2 {
   top: 17%; }
+  @media (max-width: 768px) {
+    .section2 {
+      top: 27%; } }
 
 .section3 {
   top: 27%; }
+  @media (max-width: 768px) {
+    .section3 {
+      top: 40%; } }
 
 .section4 {
   top: 37%; }
+  @media (max-width: 768px) {
+    .section4 {
+      top: 54%; } }
 
 .btn-section {
   border-bottom: solid white 1px;
@@ -47,6 +56,9 @@
   cursor: pointer; }
   .btn-section:hover {
     text-shadow: 0 0 5px white; }
+  @media (max-width: 768px) {
+    .btn-section {
+      font-size: 0.8em; } }
 
 .transform1 {
   transform: rotate(0deg);
@@ -55,6 +67,10 @@
   top: 3%;
   height: 85%;
   background-color: rgba(128, 0, 0, 0.3); }
+  @media (max-width: 768px) {
+    .transform1 {
+      left: 35%;
+      overflow: scroll; } }
 
 .transform2 {
   transform: rotate(0deg);
@@ -63,6 +79,10 @@
   top: 3%;
   height: 85%;
   background-color: rgba(204, 0, 153, 0.3); }
+  @media (max-width: 768px) {
+    .transform2 {
+      left: 35%;
+      overflow: scroll; } }
 
 .transform3 {
   transform: rotate(0deg);
@@ -71,6 +91,10 @@
   top: 3%;
   height: 85%;
   background-color: rgba(102, 0, 204, 0.3); }
+  @media (max-width: 768px) {
+    .transform3 {
+      left: 35%;
+      overflow: scroll; } }
 
 .transform4 {
   transform: rotate(0deg);
@@ -79,6 +103,10 @@
   top: 3%;
   height: 85%;
   background-color: rgba(0, 51, 204, 0.3); }
+  @media (max-width: 768px) {
+    .transform4 {
+      left: 35%;
+      overflow: scroll; } }
 
 .bg-couleur-1 {
   background-color: rgba(128, 0, 0, 0.3); }
@@ -142,12 +170,12 @@ header {
       position: absolute;
       top: 0;
       opacity: 0;
-      transition: opacity 1s; }
+      transition: opacity 0.5s; }
       @media (max-width: 768px) {
         header .titre .effect {
           display: none; } }
       header .titre .effect:hover {
-        opacity: 0.5; }
+        opacity: 0.8; }
     header .titre .effect1 {
       left: 0;
       background: linear-gradient(to right, transparent, rgba(128, 0, 0, 0.3), transparent); }
@@ -242,8 +270,10 @@ main {
   overflow: hidden;
   height: 100vh;
   padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
   transition: background-color 2s; }
+  @media (max-width: 768px) {
+    main {
+      height: 80vh; } }
   main section {
     border: solid rgba(50, 50, 50, 0.5) 4px;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
@@ -255,7 +285,6 @@ main {
     left: -11%;
     transform: rotate(30deg);
     border-radius: 10px;
-    overflow: hidden;
     transition: all 1s;
     font-family: "Lustria", serif;
     font-size: 1.2em;
@@ -267,13 +296,20 @@ main {
         transform: none;
         left: 0;
         font-size: 0.9em;
-        height: 100px; } }
+        height: 50px;
+        width: 25%; } }
   main .content {
     text-align: left;
     padding: 5%;
     font-size: 0.8em;
     font-weight: bold;
     text-shadow: 10px 5px 4px black; }
+    main .content .colonne {
+      box-sizing: border-box;
+      text-align: center;
+      width: 49%;
+      display: inline-block;
+      margin-bottom: 1.4em; }
     main .content ul {
       list-style-type: none; }
     main .content p {
@@ -281,8 +317,6 @@ main {
     main .content dt {
       font-size: 1.5em;
       font-style: italic; }
-    main .content dd {
-      font-weight: normal; }
     main .content .section-sous-titre {
       text-align: center;
       font-size: 1.4em;
@@ -296,6 +330,7 @@ main {
   right: 0%;
   overflow: hidden;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
   width: 20%;
   font-family: "Lustria", serif;
   font-size: 1em;
@@ -305,18 +340,21 @@ main {
   transition: background-color 1s; }
   @media (max-width: 768px) {
     .contact {
-      top: 60%;
-      left: 0;
-      width: 80%; } }
+      top: 72%;
+      left: 0%;
+      width: 30%;
+      border: none;
+      background-color: transparent;
+      box-shadow: none; } }
   .contact #photo {
     display: block;
     margin: 0 auto;
     width: 80%;
     border-radius: 10px;
     filter: contrast(120%) grayscale(20%); }
-  @media (max-width: 768px) {
-    .contact {
-      display: none; } }
+    @media (max-width: 768px) {
+      .contact #photo {
+        display: none; } }
   .contact a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
@@ -329,6 +367,17 @@ main {
     transition: all 0.3s; }
     .contact .logo:hover {
       opacity: 1; }
+    @media (max-width: 768px) {
+      .contact .logo {
+        height: 40px; } }
+
+@media (max-width: 768px) {
+  .contact-info {
+    display: none; } }
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none; } }
 
 .hidden {
   opacity: 0;

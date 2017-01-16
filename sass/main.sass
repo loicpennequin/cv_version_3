@@ -39,8 +39,11 @@ main
     overflow: hidden
     height: 100vh
     padding-top : 20px
-    background-color: rgba(0,0,0,0.4)
+    //background-color: rgba(0,0,0,0.4)
     transition: background-color 2s
+    @media (max-width: 768px)
+        //overflow: visible
+        height: 80vh
     section
         @include custom-border
         display: inline-block
@@ -51,7 +54,7 @@ main
         left: -11%
         transform: rotate(30deg)
         border-radius: 10px
-        overflow: hidden
+        //overflow: hidden
         transition: all 1s
         font-family: $font1
         font-size: 1.2em
@@ -62,7 +65,9 @@ main
             transform: none
             left: 0
             font-size: 0.9em
-            height: 100px
+            height: 50px
+            width: 25%
+
 
     .content
         text-align: left
@@ -70,6 +75,12 @@ main
         font-size: 0.8em
         font-weight: bold
         text-shadow: 10px 5px 4px black
+        .colonne
+            box-sizing: border-box
+            text-align: center
+            width: 49%
+            display: inline-block
+            margin-bottom: 1.4em
         ul
             list-style-type: none
         p
@@ -77,8 +88,6 @@ main
         dt
             font-size: 1.5em
             font-style: italic
-        dd
-            font-weight: normal
         .section-sous-titre
             text-align: center
             font-size: 1.4em
@@ -91,6 +100,7 @@ main
     right: 0%
     overflow: hidden
     border-radius: 10px
+    background-color: rgba(0,0,0,0.4)
     width: 20%
     font-family: $font1
     font-size: 1em
@@ -99,17 +109,20 @@ main
     padding: 15px 5px 5px 5px
     transition: background-color 1s
     @media (max-width: 768px)
-        top: 60%
-        left: 0
-        width: 80%
+        top: 72%
+        left: 0%
+        width: 30%
+        border: none
+        background-color: rgba(0,0,0,0)
+        box-shadow: none
     #photo
         display: block
         margin: 0 auto
         width: 80%
         border-radius: 10px
         filter: contrast(120%) grayscale(20%)
-    @media (max-width: 768px)
-        display: none
+        @media (max-width: 768px)
+            display: none
     a
         text-decoration: none
         color: $white
@@ -122,9 +135,16 @@ main
         transition: all 0.3s
         &:hover
             opacity: 1
+        @media (max-width: 768px)
+            height: 40px
 
+.contact-info
+    @media (max-width: 768px)
+        display: none
 
-
+.mobile-only
+    @media (min-width: 769px)
+        display: none
 
 .hidden
     opacity: 0
