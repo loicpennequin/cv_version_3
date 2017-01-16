@@ -105,7 +105,7 @@
   background-color: rgba(0, 51, 204, 0.1); }
 
 header {
-  z-index: 2;
+  z-index: 10;
   position: relative;
   border-bottom: solid 2px rgba(255, 255, 255, 0.8);
   width: 100%;
@@ -115,12 +115,7 @@ header {
     header {
       height: 80vh; } }
   header .langues {
-    position: fixed;
-    top: 2%;
-    right: 2%; }
-    @media (max-width: 768px) {
-      header .langues {
-        position: absolute; } }
+    float: right; }
   header button {
     background-color: #151515;
     cursor: pointer; }
@@ -307,17 +302,18 @@ main {
   line-height: 2em;
   color: rgba(255, 255, 255, 0.8);
   padding: 15px 5px 5px 5px;
-  transition: background-color 1s;
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  border-radius: 10px;
-  filter: contrast(120%) grayscale(20%); }
+  transition: background-color 1s; }
   @media (max-width: 768px) {
     .contact {
       top: 60%;
       left: 0;
-      width: 50%; } }
+      width: 80%; } }
+  .contact #photo {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    filter: contrast(120%) grayscale(20%); }
   @media (max-width: 768px) {
     .contact {
       display: none; } }
