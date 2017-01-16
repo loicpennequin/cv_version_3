@@ -107,12 +107,12 @@ for (let i = 1; i<=4; i++) {
 	$( "#fleche1" ).click(function() {
 		$('html, body').animate({
 			scrollTop: $("#main-anchor").offset().top
-		}, 1000);
+		}, 800);
 	});
 	$( "#fleche2" ).click(function() {
 		$('html, body').animate({
 			scrollTop: $("#main-anchor").offset().top
-		}, 1000);
+		}, 800);
 	});
 
 

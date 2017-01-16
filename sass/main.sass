@@ -48,31 +48,42 @@ main
         width: 20%
         height: 400px
         position: absolute
+        left: -11%
+        transform: rotate(30deg)
+        border-radius: 10px
         overflow: hidden
         transition: all 1s
-        border-radius: 10px
-        left: -11%
         font-family: $font1
         font-size: 1.2em
         line-height: 1.4em
         color: $white
         background-color: rgba(0,0,0,0.4)
+        @media (max-width: 769px)
+            transform: none
+            left: 0
+            font-size: 0.9em
+            height: 100px
 
-.content
-    text-align: left
-    padding: 5%
-    font-size: 0.8em
-    font-weight: bold
-    text-shadow: 10px 5px 4px black
-    ul
-        list-style-type: none
-    p
-        margin-top: 10px
-    dt
-        font-size: 1.5em
-        font-style: italic
-    dd
-        font-weight: normal
+    .content
+        text-align: left
+        padding: 5%
+        font-size: 0.8em
+        font-weight: bold
+        text-shadow: 10px 5px 4px black
+        ul
+            list-style-type: none
+        p
+            margin-top: 10px
+        dt
+            font-size: 1.5em
+            font-style: italic
+        dd
+            font-weight: normal
+        .section-sous-titre
+            text-align: center
+            font-size: 1.4em
+            margin-bottom: 1.4em
+
 .contact
     @include custom-border
     position: absolute
@@ -81,19 +92,24 @@ main
     overflow: hidden
     border-radius: 10px
     width: 20%
-    //background-color: rgba(0,0,0,0.4)
     font-family: $font1
     font-size: 1em
     line-height: 2em
     color: $white
     padding: 15px 5px 5px 5px
     transition: background-color 1s
+    @media (max-width: 768px)
+        top: 60%
+        left: 0
+        width: 50%
     #photo
-        display: block
-        margin: 0 auto
-        width: 80%
-        border-radius: 10px
-        filter: contrast(120%) grayscale(20%)
+    display: block
+    margin: 0 auto
+    width: 80%
+    border-radius: 10px
+    filter: contrast(120%) grayscale(20%)
+    @media (max-width: 768px)
+        display: none
     a
         text-decoration: none
         color: $white
