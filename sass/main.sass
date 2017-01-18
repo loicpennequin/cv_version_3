@@ -24,7 +24,7 @@ body
     width: 100%
     transition: all 0.8s
     filter: contrast(115%)
-    @media (max-width: 768px)
+    @media screen and (max-width: 768px)
         display: none
 
 .blurred
@@ -41,7 +41,7 @@ main
     padding-top : 20px
     //background-color: rgba(0,0,0,0.4)
     transition: background-color 2s
-    @media (max-width: 768px)
+    @media screen and (max-width: 768px)
         //overflow: visible
         height: 80vh
     section
@@ -61,7 +61,7 @@ main
         line-height: 1.4em
         color: $white
         background-color: rgba(0,0,0,0.4)
-        @media (max-width: 769px)
+        @media screen and (max-width: 769px)
             transform: none
             left: 0
             font-size: 0.9em
@@ -108,7 +108,7 @@ main
     color: $white
     padding: 15px 5px 5px 5px
     transition: background-color 1s
-    @media (max-width: 768px)
+    @media screen and (max-width: 768px)
         top: 72%
         left: 0%
         width: 30%
@@ -121,7 +121,7 @@ main
         width: 80%
         border-radius: 10px
         filter: contrast(120%) grayscale(20%)
-        @media (max-width: 768px)
+        @media screen and (max-width: 768px)
             display: none
     a
         text-decoration: none
@@ -135,15 +135,15 @@ main
         transition: all 0.3s
         &:hover
             opacity: 1
-        @media (max-width: 768px)
+        @media screen and (max-width: 768px)
             height: 40px
 
 .contact-info
-    @media (max-width: 768px)
+    @media screen and (max-width: 768px)
         display: none
 
 .mobile-only
-    @media (min-width: 769px)
+    @media screen and (min-width: 769px)
         display: none
 
 .hidden

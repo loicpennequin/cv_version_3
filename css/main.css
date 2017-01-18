@@ -31,19 +31,19 @@
 
 .section2 {
   top: 17%; }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .section2 {
       top: 27%; } }
 
 .section3 {
   top: 27%; }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .section3 {
       top: 40%; } }
 
 .section4 {
   top: 37%; }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .section4 {
       top: 54%; } }
 
@@ -56,7 +56,7 @@
   cursor: pointer; }
   .btn-section:hover {
     text-shadow: 0 0 5px white; }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .btn-section {
       font-size: 0.8em; } }
 
@@ -67,7 +67,7 @@
   top: 3%;
   height: 85%;
   background-color: rgba(128, 0, 0, 0.3); }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .transform1 {
       left: 35%;
       overflow: scroll; } }
@@ -79,7 +79,7 @@
   top: 3%;
   height: 85%;
   background-color: rgba(204, 0, 153, 0.3); }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .transform2 {
       left: 35%;
       overflow: scroll; } }
@@ -91,7 +91,7 @@
   top: 3%;
   height: 85%;
   background-color: rgba(102, 0, 204, 0.3); }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .transform3 {
       left: 35%;
       overflow: scroll; } }
@@ -103,7 +103,7 @@
   top: 3%;
   height: 85%;
   background-color: rgba(0, 51, 204, 0.3); }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .transform4 {
       left: 35%;
       overflow: scroll; } }
@@ -139,7 +139,7 @@ header {
   width: 100%;
   height: 100vh;
   color: rgba(255, 255, 255, 0.8); }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     header {
       height: 80vh; } }
   header .langues {
@@ -161,7 +161,7 @@ header {
     animation-name: titre-slide;
     animation-duration: 2s;
     animation-fill-mode: forwards; }
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       header .titre {
         animation-name: titre-slide-768; } }
     header .titre .effect {
@@ -171,7 +171,7 @@ header {
       top: 0;
       opacity: 0;
       transition: opacity 0.5s; }
-      @media (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         header .titre .effect {
           display: none; } }
       header .titre .effect:hover {
@@ -197,7 +197,7 @@ header {
       animation-name: titre-shine;
       animation-duration: 2s;
       animation-iteration-count: infinite; }
-      @media (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         header .titre .nom {
           font-size: 3.5em; } }
     header .titre .sous-titre {
@@ -208,7 +208,7 @@ header {
       border-bottom: solid rgba(255, 255, 255, 0.8) 1px;
       padding-right: 20px;
       background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.6)); }
-      @media (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         header .titre .sous-titre {
           font-size: 1em; } }
 
@@ -219,7 +219,7 @@ header {
   right: 15%;
   z-index: 50;
   cursor: pointer; }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     #fleche1 {
       width: 30px; } }
   #fleche1:hover {
@@ -233,7 +233,7 @@ header {
   left: 15%;
   z-index: 50;
   cursor: pointer; }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     #fleche2 {
       width: 30px; } }
   #fleche2:hover {
@@ -257,7 +257,7 @@ body {
   width: 100%;
   transition: all 0.8s;
   filter: contrast(115%); }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .static-bg {
       display: none; } }
 
@@ -271,7 +271,7 @@ main {
   height: 100vh;
   padding-top: 20px;
   transition: background-color 2s; }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     main {
       height: 80vh; } }
   main section {
@@ -291,7 +291,7 @@ main {
     line-height: 1.4em;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.4); }
-    @media (max-width: 769px) {
+    @media screen and (max-width: 769px) {
       main section {
         transform: none;
         left: 0;
@@ -338,7 +338,7 @@ main {
   color: rgba(255, 255, 255, 0.8);
   padding: 15px 5px 5px 5px;
   transition: background-color 1s; }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .contact {
       top: 72%;
       left: 0%;
@@ -352,7 +352,7 @@ main {
     width: 80%;
     border-radius: 10px;
     filter: contrast(120%) grayscale(20%); }
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       .contact #photo {
         display: none; } }
   .contact a {
@@ -367,15 +367,15 @@ main {
     transition: all 0.3s; }
     .contact .logo:hover {
       opacity: 1; }
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       .contact .logo {
         height: 40px; } }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .contact-info {
     display: none; } }
 
-@media (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .mobile-only {
     display: none; } }
 
