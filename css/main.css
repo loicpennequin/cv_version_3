@@ -141,7 +141,7 @@ header {
   color: rgba(255, 255, 255, 0.8); }
   @media screen and (max-width: 768px) {
     header {
-      height: 80vh; } }
+      height: 100vh; } }
   header .langues {
     float: right; }
   header button {
@@ -321,6 +321,9 @@ main {
       text-align: center;
       font-size: 1.4em;
       margin-bottom: 1.4em; }
+    main .content .skill-icon {
+      font-size: 1.6em;
+      margin-right: 10px; }
 
 .contact {
   border: solid rgba(50, 50, 50, 0.5) 4px;
