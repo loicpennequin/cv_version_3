@@ -230,9 +230,6 @@ header {
   left: 15%;
   z-index: 50;
   cursor: pointer; }
-  @media screen and (max-width: 768px) {
-    #fleche2 {
-      width: 30px; } }
   #fleche2:hover {
     animation-name: arrow;
     animation-duration: 1s; }
