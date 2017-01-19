@@ -219,9 +219,6 @@ header {
   right: 15%;
   z-index: 50;
   cursor: pointer; }
-  @media screen and (max-width: 768px) {
-    #fleche1 {
-      width: 30px; } }
   #fleche1:hover {
     animation-name: arrow;
     animation-duration: 1s; }
