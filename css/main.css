@@ -332,17 +332,27 @@ main {
   border: solid 1px rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   transition: all 1s;
-  opacity: 0.7;
-  z-index: 4; }
+  opacity: 0.8;
+  z-index: 4;
+  width: 250px; }
+  @media screen and (max-width: 768px) {
+    .projet-image {
+      width: 150px; } }
   .projet-image:hover {
     opacity: 1; }
 
 .projet-texte {
-  transition: all 1s; }
+  border: solid rgba(50, 50, 50, 0.5) 4px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: all 1s;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(-100%); }
 
-.projet-hidden {
-  transform: translateY(-100%);
-  opacity: 0; }
+.projet-image:hover ~ .projet-texte {
+  opacity: 1;
+  background-color: #151515;
+  transform: none; }
 
 .contact {
   border: solid rgba(50, 50, 50, 0.5) 4px;
