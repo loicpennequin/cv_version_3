@@ -65,8 +65,8 @@
   width: 55%;
   left: 18%;
   top: 3%;
-  height: 85%;
-  background-color: rgba(128, 0, 0, 0.3); }
+  height: 95%;
+  background-color: rgba(194, 5, 8, 0.3); }
   @media screen and (max-width: 768px) {
     .transform1 {
       left: 35%;
@@ -77,8 +77,8 @@
   width: 55%;
   left: 18%;
   top: 3%;
-  height: 85%;
-  background-color: rgba(204, 0, 153, 0.3); }
+  height: 95%;
+  background-color: rgba(133, 36, 54, 0.3); }
   @media screen and (max-width: 768px) {
     .transform2 {
       left: 35%;
@@ -89,8 +89,8 @@
   width: 55%;
   left: 18%;
   top: 3%;
-  height: 85%;
-  background-color: rgba(102, 0, 204, 0.3); }
+  height: 95%;
+  background-color: rgba(71, 66, 99, 0.3); }
   @media screen and (max-width: 768px) {
     .transform3 {
       left: 35%;
@@ -101,36 +101,36 @@
   width: 55%;
   left: 18%;
   top: 3%;
-  height: 85%;
-  background-color: rgba(0, 51, 204, 0.3); }
+  height: 95%;
+  background-color: rgba(10, 97, 145, 0.3); }
   @media screen and (max-width: 768px) {
     .transform4 {
       left: 35%;
       overflow: scroll; } }
 
 .bg-couleur-1 {
-  background-color: rgba(128, 0, 0, 0.3); }
+  background-color: rgba(194, 5, 8, 0.3); }
 
 .bg-couleur-1b {
-  background-color: rgba(128, 0, 0, 0.1); }
+  background-color: rgba(194, 5, 8, 0.1); }
 
 .bg-couleur-2 {
-  background-color: rgba(204, 0, 153, 0.1); }
+  background-color: rgba(133, 36, 54, 0.1); }
 
 .bg-couleur-2b {
-  background-color: rgba(204, 0, 153, 0.1); }
+  background-color: rgba(133, 36, 54, 0.1); }
 
 .bg-couleur-3 {
-  background-color: rgba(102, 0, 204, 0.3); }
+  background-color: rgba(71, 66, 99, 0.3); }
 
 .bg-couleur-3b {
-  background-color: rgba(102, 0, 204, 0.1); }
+  background-color: rgba(71, 66, 99, 0.1); }
 
 .bg-couleur-4 {
-  background-color: rgba(0, 51, 204, 0.3); }
+  background-color: rgba(10, 97, 145, 0.3); }
 
 .bg-couleur-4b {
-  background-color: rgba(0, 51, 204, 0.1); }
+  background-color: rgba(10, 97, 145, 0.1); }
 
 header {
   z-index: 10;
@@ -178,16 +178,16 @@ header {
         opacity: 0.8; }
     header .titre .effect1 {
       left: 0;
-      background: linear-gradient(to right, transparent, rgba(128, 0, 0, 0.3), transparent); }
+      background: linear-gradient(to right, transparent, rgba(194, 5, 8, 0.3), transparent); }
     header .titre .effect2 {
       left: 25%;
-      background: linear-gradient(to right, transparent, rgba(204, 0, 153, 0.3), transparent); }
+      background: linear-gradient(to right, transparent, rgba(133, 36, 54, 0.3), transparent); }
     header .titre .effect3 {
       left: 50%;
-      background: linear-gradient(to right, transparent, rgba(102, 0, 204, 0.3), transparent); }
+      background: linear-gradient(to right, transparent, rgba(71, 66, 99, 0.3), transparent); }
     header .titre .effect4 {
       left: 75%;
-      background: linear-gradient(to right, transparent, rgba(0, 51, 204, 0.3), transparent); }
+      background: linear-gradient(to right, transparent, rgba(10, 97, 145, 0.3), transparent); }
     header .titre .nom {
       background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.6), transparent);
       border-top: solid 1px rgba(255, 255, 255, 0.8);
@@ -287,11 +287,17 @@ main {
     background-color: rgba(0, 0, 0, 0.4); }
     @media screen and (max-width: 769px) {
       main section {
+        background-color: #0d0d0d;
         transform: none;
         left: 0;
         font-size: 0.9em;
         height: 50px;
         width: 25%; } }
+  main .section-3-others {
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      main .section-3-others {
+        text-align: left; } }
   main .content {
     text-align: left;
     padding: 5%;
@@ -304,6 +310,9 @@ main {
       width: 49%;
       display: inline-block;
       margin-bottom: 1.4em; }
+      @media screen and (max-width: 768px) {
+        main .content .colonne {
+          text-align: left; } }
     main .content ul {
       list-style-type: none; }
     main .content p {
@@ -316,8 +325,24 @@ main {
       font-size: 1.4em;
       margin-bottom: 1.4em; }
     main .content .skill-icon {
-      font-size: 1.6em;
+      font-size: 1.9em;
       margin-right: 10px; }
+
+.projet-image {
+  border: solid 1px rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  transition: all 1s;
+  opacity: 0.7;
+  z-index: 4; }
+  .projet-image:hover {
+    opacity: 1; }
+
+.projet-texte {
+  transition: all 1s; }
+
+.projet-hidden {
+  transform: translateY(-100%);
+  opacity: 0; }
 
 .contact {
   border: solid rgba(50, 50, 50, 0.5) 4px;
