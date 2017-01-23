@@ -47,6 +47,12 @@
     .section4 {
       top: 54%; } }
 
+.section5 {
+  top: 47%; }
+  @media screen and (max-width: 768px) {
+    .section5 {
+      top: 67%; } }
+
 .btn-section {
   border-bottom: solid white 1px;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
@@ -105,6 +111,18 @@
   background-color: rgba(10, 97, 145, 0.3); }
   @media screen and (max-width: 768px) {
     .transform4 {
+      left: 35%;
+      overflow: scroll; } }
+
+.transform5 {
+  transform: rotate(0deg);
+  width: 55%;
+  left: 18%;
+  top: 3%;
+  height: 95%;
+  background-color: rgba(0, 110, 210, 0.3); }
+  @media screen and (max-width: 768px) {
+    .transform5 {
       left: 35%;
       overflow: scroll; } }
 
@@ -293,10 +311,10 @@ main {
         font-size: 0.9em;
         height: 50px;
         width: 25%; } }
-  main .section-3-others {
+  main .section-4-others {
     text-align: center; }
     @media screen and (max-width: 768px) {
-      main .section-3-others {
+      main .section-4-others {
         text-align: left; } }
   main .content {
     text-align: left;

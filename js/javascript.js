@@ -3,9 +3,9 @@ $(document).ready(function(){
 // MENU
 
 
-for (let i = 1; i<=4; i++) {
+for (let i = 1; i<=5; i++) {
 	$(".section" + i).click(function(){
-	for (var j = 1; j<=4; j++) {
+	for (var j = 1; j<=5; j++) {
 		if (i == j) {
 			$(".section" + j).toggleClass("transform" + i );
 			$("#content" + j).toggleClass("hidden");
